@@ -25,6 +25,10 @@ import { TttList } from "./ttt/TttList";
 import { TttCreate } from "./ttt/TttCreate";
 import { TttEdit } from "./ttt/TttEdit";
 import { TttShow } from "./ttt/TttShow";
+import { AaaList } from "./aaa/AaaList";
+import { AaaCreate } from "./aaa/AaaCreate";
+import { AaaEdit } from "./aaa/AaaEdit";
+import { AaaShow } from "./aaa/AaaShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -85,6 +89,13 @@ const App = (): React.ReactElement => {
           edit={TttEdit}
           create={TttCreate}
           show={TttShow}
+        />
+        <Resource
+          name="Aaa"
+          list={AaaList}
+          edit={AaaEdit}
+          create={AaaCreate}
+          show={AaaShow}
         />
       </Admin>
     </div>
