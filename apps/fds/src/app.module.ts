@@ -2,6 +2,8 @@ import { Module } from "@nestjs/common";
 import { UserModule } from "./user/user.module";
 import { DdddsModule } from "./dddds/dddds.module";
 import { RoomModule } from "./room/room.module";
+import { WhysModule } from "./whys/whys.module";
+import { TttModule } from "./ttt/ttt.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -17,6 +19,8 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     UserModule,
     DdddsModule,
     RoomModule,
+    WhysModule,
+    TttModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,

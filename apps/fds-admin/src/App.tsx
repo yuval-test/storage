@@ -17,6 +17,14 @@ import { RoomList } from "./room/RoomList";
 import { RoomCreate } from "./room/RoomCreate";
 import { RoomEdit } from "./room/RoomEdit";
 import { RoomShow } from "./room/RoomShow";
+import { WhysList } from "./whys/WhysList";
+import { WhysCreate } from "./whys/WhysCreate";
+import { WhysEdit } from "./whys/WhysEdit";
+import { WhysShow } from "./whys/WhysShow";
+import { TttList } from "./ttt/TttList";
+import { TttCreate } from "./ttt/TttCreate";
+import { TttEdit } from "./ttt/TttEdit";
+import { TttShow } from "./ttt/TttShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -63,6 +71,20 @@ const App = (): React.ReactElement => {
           edit={RoomEdit}
           create={RoomCreate}
           show={RoomShow}
+        />
+        <Resource
+          name="Whys"
+          list={WhysList}
+          edit={WhysEdit}
+          create={WhysCreate}
+          show={WhysShow}
+        />
+        <Resource
+          name="Ttt"
+          list={TttList}
+          edit={TttEdit}
+          create={TttCreate}
+          show={TttShow}
         />
       </Admin>
     </div>
