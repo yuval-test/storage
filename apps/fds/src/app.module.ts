@@ -5,6 +5,7 @@ import { RoomModule } from "./room/room.module";
 import { WhysModule } from "./whys/whys.module";
 import { TttModule } from "./ttt/ttt.module";
 import { AaaModule } from "./aaa/aaa.module";
+import { BbbbModule } from "./bbbb/bbbb.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -23,6 +24,7 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     WhysModule,
     TttModule,
     AaaModule,
+    BbbbModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,

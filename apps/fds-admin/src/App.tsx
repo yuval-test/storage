@@ -29,6 +29,10 @@ import { AaaList } from "./aaa/AaaList";
 import { AaaCreate } from "./aaa/AaaCreate";
 import { AaaEdit } from "./aaa/AaaEdit";
 import { AaaShow } from "./aaa/AaaShow";
+import { BbbbList } from "./bbbb/BbbbList";
+import { BbbbCreate } from "./bbbb/BbbbCreate";
+import { BbbbEdit } from "./bbbb/BbbbEdit";
+import { BbbbShow } from "./bbbb/BbbbShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -96,6 +100,13 @@ const App = (): React.ReactElement => {
           edit={AaaEdit}
           create={AaaCreate}
           show={AaaShow}
+        />
+        <Resource
+          name="Bbbb"
+          list={BbbbList}
+          edit={BbbbEdit}
+          create={BbbbCreate}
+          show={BbbbShow}
         />
       </Admin>
     </div>
